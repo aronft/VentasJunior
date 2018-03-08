@@ -4,7 +4,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-// User es la estrucutra del usuario
+// User usuario del sistema
 type User struct {
 	gorm.Model
 	Username        string  `json:"username" gorm:"not null;unique"`
