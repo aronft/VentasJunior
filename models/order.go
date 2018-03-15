@@ -9,5 +9,5 @@ type Order struct {
 	gorm.Model
 	UserID      uint          `json:"userId"`
 	Total       float64       `json:"total" gorm:"not null;type:numeric(19,7)"`
-	OrderDetail []OrderDetail `json:"orderDatil,omitempty"`
+	OrderDetail []OrderDetail `json:"orderDetail, omitempty"`
 }
